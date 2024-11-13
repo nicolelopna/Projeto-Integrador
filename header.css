@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'Dream Avenue';
+    src: url('/fonts/dream-avenue-modern-classic/Dream\ Avenue.ttf') format('truetype');
+   
+}
+
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.cabeçalho {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cabeçalhoimg {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0;
+    padding: 0;
+}
+
+.texto {
+    font-family: 'Dream Avenue', sans-serif;
+    position: absolute;
+    top: 25%; 
+    left: 52%;
+    transform: translate(-50%, -50%); 
+    color:#69443c; 
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 5px
+    
+    
+ 
+}
+
+.texto h1 {
+    margin-bottom: 5px;
+}
+
+
+.texto p {
+font-size: 1.5rem;
+
+}
+
+.logo {
+    position: absolute; 
+    top: 0; 
+    left: 29em; 
+    width: 30rem; 
+    height: auto;
+    margin-right: 10px;
+}
