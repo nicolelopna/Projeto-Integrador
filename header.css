@@ -64,3 +64,11 @@ font-size: 1.5rem;
     height: auto;
     margin-right: 10px;
 }
+
+.serviço_item img {
+    width: 200px; /* Largura fixa */
+    height: 150px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para preencher o container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
