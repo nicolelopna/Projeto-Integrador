@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Dream Avenue';
+    src: url('/fonts/dream-avenue-modern-classic/Dream\ Avenue.ttf') format('truetype');
+
+   
+}
+.serviços {
+    background-color: #E6DAD1;
+    padding-top: 4em; 
+}
+.serviços_titulo {
+    color: #69443C;
+    font-family: 'Dream Avenue', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.serviço_container h2 {
+
+}
+  
+
+.descrição_titulocabelo {
+    color: black;
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+    margin-left: 5em;
+    margin-top: -2.2;
+
+}
+
+.descrição_titulocabelo2 {
+    color: #69443C;
+    font-family: "Dream Avenue", sans-serif;
+    font-size: 2rem;
+    margin-left: 9em;
+    margin-top: -2.3em;
+
+}
