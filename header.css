@@ -1,12 +1,7 @@
-
 @font-face {
     font-family: 'Dream Avenue';
     src: url('/fonts/dream-avenue-modern-classic/Dream\ Avenue.ttf') format('truetype');
-   
 }
-
-
-
 
 body, html {
     margin: 0;
@@ -21,7 +16,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 
 .cabeçalhoimg {
     width: 100%;
@@ -40,35 +34,88 @@ body, html {
     color:#69443c; 
     font-size: 2.5rem; 
     text-align: center;
-    margin-bottom: 5px
-    
-    
- 
+    margin-bottom: 5px;
 }
 
 .texto h1 {
     margin-bottom: 5px;
 }
 
-
 .texto p {
-font-size: 1.5rem;
-
+    font-size: 1.5rem;
 }
 
 .logo {
     position: absolute; 
-    top: 0; 
-    left: 29em; 
-    width: 30rem; 
-    height: auto;
-    margin-right: 10px;
+    top: -9%; 
+    left: 17%; 
+    width: 30vw;  
+    max-width: 900px;  
+    height: auto; 
 }
 
-.serviço_item img {
-    width: 200px; /* Largura fixa */
-    height: 150px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para preencher o container */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+@media (max-width: 480px) {
+
+    .cabeçalhoimg {
+        width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        width: 50vw;  
+        max-width: 500px;  
+        top: -5%; 
+        left: -5%;
+    }
+
+    .texto {
+        font-size: 1rem; 
+        top: 10%;
+        left: 50%; 
+    }
+
+    .texto p {
+        font-size: 1.2rem; 
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .logo {
+        width: 40vw;  
+        max-width: 700px;  
+        top: -7%; 
+        left: 15%;
+    }
+
+    .texto {
+        font-size: 2.2rem; 
+        top: 35%; /
+    }
+
+    .texto p {
+        font-size: 1.4rem; 
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .logo {
+        width: 30vw; 
+        max-width: 900px;  
+        top: -9%; 
+        left: 17%; 
+    }
+
+    .texto {
+        font-size: 2.5rem; 
+        top: 25%; 
+    }
+
+    .texto p {
+        font-size: 1.5rem; 
+    }
 }
