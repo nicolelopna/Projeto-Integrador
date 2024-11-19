@@ -35,15 +35,16 @@
 }
 
 .descrição_imagem {
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.2rem;
     color: black;
-    font-family: 'Poppins', sans-serif; /* A fonte usada para o texto */
-    line-height: 1.6; /* Aumenta a altura da linha para tornar o texto mais legível */
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6; 
 }
 
 
 
 .serviço_container {
+    width: 100%;
     max-width: 800px; 
     margin: 0;
     padding: 3em; 
@@ -86,4 +87,45 @@
     .serviço_item img {
         max-width: 180px; 
     }
+}
+
+.outros_container {
+    background-color: #69443C; 
+    padding-top: 4em;
+    padding-bottom: 4em;
+    border-radius: 10%;
+    
+    
+}
+
+.outros_titulo {
+    color: black; 
+    font-family: 'Dream Avenue', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.outros_imagens {
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 20px;
+    justify-items: center; 
+}
+
+.outros_item img {
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.outros_descricao {
+    font-size: 1.2rem; 
+    color: #E6DAD1; 
+    text-align: center; 
+    margin-top: 10px;
 }
