@@ -43,27 +43,37 @@
 
 
 
-.serviço_container {
-    width: 100%;
-    max-width: 800px; 
-    margin: 0;
-    padding: 3em; 
+.conteiner_pai {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 15px; 
+    margin-top: 2em; 
+}
+
+.serviço_container, .outros_container {
+    flex: 1; 
+    max-width: 48%; 
+}
+
+.serviços_imagens, .outros_imagens {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
 }
 
 .serviços_imagens {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    margin-top: 20px;
-    max-width: 100%; 
+    padding-left: 40px; 
+    padding-right: 20px; 
 }
+
 
 .serviço_item img {
     width: 100%; 
-    max-width: 900px; 
+    max-width: 400px; 
     height: auto; 
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -94,6 +104,7 @@
     padding-top: 4em;
     padding-bottom: 4em;
     border-radius: 10%;
+    margin-top: 6.5em; 
     
     
 }
@@ -101,9 +112,10 @@
 .outros_titulo {
     color: black; 
     font-family: 'Dream Avenue', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-top: 0;
+    margin-top: -3.5em; 
+    margin-bottom: 1em; 
 }
 
 .outros_imagens {
@@ -128,4 +140,29 @@
     color: #E6DAD1; 
     text-align: center; 
     margin-top: 10px;
+}
+
+.botao-agendar {
+    background-color: #E1B4AA; 
+    color: #69443C; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem; 
+    padding: 0.8em 1.5em; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.botao-agendar:hover {
+    background-color: #69443C; 
+    color: #E1B4AA; 
+    transform: scale(1.05); 
+}
+
+.outros_botao {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
 }
