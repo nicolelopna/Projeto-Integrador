@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital@0;1&family=Arima:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosarivo:ital@0;1&family=Tajawal:wght@200;300;400;500;700;800;900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="agendamento-container">
+        <h2>Complete seu Cadastro para o Agendamento:</h2>
+        
+        <form id="form-agendamento">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="numero">Número:</label>
+            <input type="tel" id="numero" name="numero" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="data">Escolha a data do agendamento:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="profissional">Você tem preferência de profissional?</label>
+            <select id="profissional" name="profissional">
+                <option value="luciana">Luciana</option>
+                <option value="gabriela">Gabriela</option>
+                <option value="joao">João</option>
+                <option value="nao-tem">Não tenho preferência</option>
+            </select>
+            
+            <label for="procedimento">Que tipo de procedimento você pretende fazer?</label>
+            <select id="procedimento" name="procedimento">
+                <option value="corte">Corte</option>
+                <option value="loira-global">Loira Global</option>
+                <option value="morena-iluminada">Morena Iluminada</option>
+                <option value="spa">SPA</option>
+                <option value="outro">Outro</option>
+            </select>
+            
+            <label for="hora">Escolha o horário:</label>
+            <select id="hora" name="hora">
+                <option value="12:00">12:00</option>
+                <option value="14:40">14:40</option>
+                <option value="16:40">16:40</option>
+                <option value="17:50">17:50</option>
+            </select>
+
+            <button type="submit" id="btn-concluir">Concluir Agendamento</button>
+        </form>
+    </div>
+
+    <script src="agendamento.js"></script>
+</body>
+</html>

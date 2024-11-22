@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1B4AA;
+    margin: 0;
+    padding: 0;
+}
+
+.agendamento-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E1B4AA;
+    border-radius: 10px;
+    
+}
+
+h2 {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: italic;
+    color:#7D4D34;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #7D4109;
+    color: #FFF;
+    padding: 8px 16px; 
+    width: 30%; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: block; 
+    margin: 20px auto; 
+}
+
+button:hover {
+    background-color: #69443C;
+    opacity: 0.8;
+}
+
+
+select option:hover, input[type="date"]:hover {
+    background-color: #7D4D34;
+    color: white;
+}
+
+select, input[type="date"] {
+    transition: background-color 0.3s;
+}
