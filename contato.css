@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Dream Avenue';
+    src: url('/fonts/dream-avenue-modern-classic/Dream\ Avenue.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inf-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 70px 0;
+}
+
+.inf-contato img {
+    margin-bottom: 20px;
+    max-height: 500px;  
+    max-width: 450px;  
+    display: block; 
+    width: 100%; 
+}
+
+section h3 {
+    padding-bottom: 20px;
+    justify-content: center;
+    font-family: "Rosarivo", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -3em;
+    color: #69443C;
+
+}
+
+.contatos {
+    max-width: 450px; 
+    width: 100%; 
+    min-width: 169px;
+    align-items: center;
+}
+
+.contatos ul, h3 {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
+
+.contatos li a {
+    position: relative;
+    bottom: 8px;
+    font-family: "Rosario";
+    text-decoration: none;
+    color: #000000;
+}
+
+.contatos li {
+    padding: 5px;
+}
+
+li > li {
+    margin-top: 5px;
+}
+
+.contatos li:nth-child(3) {
+    margin-left: -12px;
+    margin-top: 4px;
+}
+
+.contatos li:nth-child(3) svg {
+
+    position: relative;
+    bottom: 4px;
+    right: 5px;
+}
+
+.contatos p {
+    font-family: "Rosarivo", serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+footer {
+    background-color: #F8F8F8;
+    padding: 30px 0;
+    text-align: center;
+    font-family: "Rosarivo", "cursive";
+}
+
+footer a {
+    font-family: "Rosarivo", serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1024px) {
+    
+    .inf-contato {
+        flex-direction: column;
+        padding: 10px 30px; 
+        align-items: center; 
+    }
+
+    .inf-contato img {
+        max-height: 400px; 
+        max-width: 90%; 
+    }
+
+    
+    .contatos {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .inf-contato img {
+        max-height: 300px; 
+    }
+
+  
+    .inf-contato {
+        padding: 10px 20px; 
+    }
+
+    .contatos {
+        max-width: 100%;
+        min-width: auto; 
+    }
+
+    .contatos ul {
+        font-size: 1.4rem; 
+    }
+
+    footer {
+        padding: 20px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .inf-contato {
+        padding: 10px 15px; 
+    }
+
+    .inf-contato img {
+        max-height: 250px; 
+        max-width: 100%; 
+    }
+
+    .contatos {
+        max-width: 100%;
+        padding: 10px 0; 
+    }
+
+    .contatos ul {
+        font-size: 1.2rem; 
+    }
+
+    footer {
+        padding: 15px 0; 
+    }
+}

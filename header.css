@@ -45,14 +45,6 @@ body, html {
     font-size: 1.5rem;
 }
 
-.logo {
-    position: absolute; 
-    top: -9%; 
-    left: 17%; 
-    width: 30vw;  
-    max-width: 900px;  
-    height: auto; 
-}
 
 
 @media (max-width: 480px) {
@@ -64,12 +56,7 @@ body, html {
         margin: 0;
         padding: 0;
     }
-    .logo {
-        width: 50vw;  
-        max-width: 500px;  
-        top: -3%; 
-        left: -5%;
-    }
+   
 
     .texto {
         font-size: 1rem; 
@@ -84,12 +71,7 @@ body, html {
 
 
 @media (min-width: 481px) and (max-width: 1024px) {
-    .logo {
-        width: 40vw;  
-        max-width: 700px;  
-        top: -7%; 
-        left: 15%;
-    }
+   
 
     .texto {
         font-size: 2.2rem; 
@@ -103,12 +85,7 @@ body, html {
 
 
 @media (min-width: 1025px) {
-    .logo {
-        width: 30vw; 
-        max-width: 900px;  
-        top: -9%; 
-        left: 17%; 
-    }
+   
 
     .texto {
         font-size: 2.5rem; 

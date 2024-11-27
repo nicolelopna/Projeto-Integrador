@@ -15,24 +15,37 @@
     text-align: center;
     margin-top: 0;
 }
+.descricao_titulos {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 1em; 
+    margin: 0 auto; 
+    margin-top: 1em; 
+}
 
 .descrição_titulocabelo {
     color: black;
     font-family: "Rosarivo", serif;
     font-weight: 400;
     font-style: italic;
+    position: relative; 
     font-size: 2.5rem;
+    top: 0.40em;
     margin-left: 5em;
-    margin-top: -2.2;
+    margin-top: 0;
 }
 
 .descrição_titulocabelo2 {
     color: #69443C;
     font-family: "Dream Avenue", sans-serif;
     font-size: 2.5rem;
-    margin-left: 9em;
-    margin-top: -2.3em;
+    position: relative; 
+    top: -1em;
+    margin-left: 9em; 
+    margin-top: 0; 
 }
+
 
 .descrição_imagem {
     font-size: 1.2rem;
@@ -78,27 +91,6 @@
 }
 
 
-@media (max-width: 480px) {
-    .serviços_imagens {
-        grid-template-columns: 1fr; 
-    }
-
-    .serviço_item img {
-        max-width: 150px; 
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 1024px) {
-    .serviços_imagens {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .serviço_item img {
-        max-width: 180px; 
-    }
-}
-
 .outros_container {
     background-color: #69443C; 
     padding-top: 4em;
@@ -141,19 +133,22 @@
     text-align: center; 
     margin-top: 10px;
 }
-
 .botao-agendar {
-    background-color: #E1B4AA; 
-    color: #69443C; 
-    font-family: 'Poppins', sans-serif; 
-    font-size: 1rem; 
-    padding: 0.8em 1.5em; 
-    border: none; 
-    border-radius: 20px; 
-    cursor: pointer; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    transition: background-color 0.3s, transform 0.2s; 
+    background-color: #E1B4AA;
+    color: #69443C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; 
+    padding: 1em 2.5em; 
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    width: fit-content; 
+    max-width: 400px; 
+    margin-top: -5em;
 }
+
 
 .botao-agendar:hover {
     background-color: #69443C; 
@@ -165,4 +160,113 @@
     display: flex; 
     justify-content: center; 
     margin-top: 20px; 
+}
+
+@media (max-width: 1024px) {
+    .serviços_titulo {
+        font-size: 3rem;
+    }
+    .descricao_titulos {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .descrição_titulocabelo {
+        font-size: 2rem;
+        margin-left: 3.5em;
+        margin-top: 0;
+    }
+
+    .descrição_titulocabelo2 {
+        font-size: 2rem;
+        margin-left: 7em;
+        margin-top: 0;
+    }
+    .conteiner_pai {
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviço_container, .outros_container {
+        max-width: 100%;
+    }
+    .serviços_imagens {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .outros_imagens {
+        grid-template-columns: 1fr;
+    }
+
+    .outros_botao {
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px; 
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .serviços_titulo {
+        font-size: 2.5rem;
+    }
+    .descricao_titulos {
+        gap: 0.5em;
+    }
+    .descrição_titulocabelo, .descrição_titulocabelo2 {
+        font-size: 1.8rem;
+    }
+    .conteiner_pai {
+        margin-top: 1em;
+    }
+    .serviços_imagens {
+        grid-template-columns: 1fr;
+    }
+    .botao-agendar {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .outros_botao {
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px; 
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .outros_imagens img {
+        width: 20em;
+        max-width: 90%; 
+        height: auto;
+        object-fit: cover;
+    }
+
+    .serviços_titulo {
+        font-size: 2rem;
+    }
+    .descricao_titulos {
+        gap: 0.3em;
+    }
+    .descrição_titulocabelo, .descrição_titulocabelo2 {
+        font-size: 1.6rem;
+    }
+    .botao-agendar {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 1em;
+    }
+    .outros_botao {
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px; 
+        font-size: 1em;
+    }
+    .botao-agendar {
+        padding: 0.6em 1.5em; 
+        max-width: 220px;
+        margin-top: -7em 
+    }
+
+    
 }
