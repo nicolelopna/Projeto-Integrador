@@ -10,7 +10,7 @@
 
 .serviços_titulo {
     color: #69443C;
-    font-family: 'Dream Avenue', sans-serif;
+    font-family: 'Dream Avenue';
     font-size: 4rem;
     text-align: center;
     margin-top: 0;
@@ -26,7 +26,7 @@
 
 .descrição_titulocabelo {
     color: black;
-    font-family: "Rosarivo", serif;
+    font-family: "Rosarivo";
     font-weight: 400;
     font-style: italic;
     position: relative; 
@@ -38,7 +38,7 @@
 
 .descrição_titulocabelo2 {
     color: #69443C;
-    font-family: "Dream Avenue", sans-serif;
+    font-family: "Dream Avenue";
     font-size: 2.5rem;
     position: relative; 
     top: -1em;
@@ -50,7 +50,7 @@
 .descrição_imagem {
     font-size: 1.2rem;
     color: black;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins'; 
     line-height: 1.6; 
 }
 
@@ -103,7 +103,7 @@
 
 .outros_titulo {
     color: black; 
-    font-family: 'Dream Avenue', sans-serif;
+    font-family: 'Dream Avenue';
     font-size: 2.5rem;
     text-align: center;
     margin-top: -3.5em; 
@@ -136,7 +136,7 @@
 .botao-agendar {
     background-color: #E1B4AA;
     color: #69443C;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 1.5rem; 
     padding: 1em 2.5em; 
     border: none;
